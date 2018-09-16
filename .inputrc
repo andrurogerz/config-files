@@ -1,0 +1,18 @@
+"\e[1;9C": forward-word
+"\e[1;9D": backward-word
+"\e[1;10C": kill-line
+"\e[1;10D": backward-kill-line
+TAB: menu-complete
+"\e[Z": "\e-1\C-i"
+
+# this makes the "delete" key work rather than
+# just entering a ~
+"\e[3~": delete-char
+
+# these allow you to start typing a command and
+# use the up/down arrow to auto complete from
+# commands in your history
+"\e[B": history-search-forward
+"\e[A": history-search-backward
+
+set completion-ignore-case on
